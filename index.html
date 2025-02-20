@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website Design</title>
+    <!-- This is a link to a CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- This is a link only for using icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <!-- Heading section -->
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-j"></i>
+            <div class="logo-text">Jacob elohe</div>
+          </div>
+          <nav>
+            <!-- Mini screen navigation button -->
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <style>
+                .ee{
+                    color: #910910;
+                }
+            </style>
+            <!-- Main navigation links -->
+            <ul class="navlinks">
+              <li><a href="#ex"><i class="fa-solid fa-"></i>Home</a></li>
+              <li><a href="#"><i class="fa-solid fa-"></i>Portfolio</a></li>
+              <li><a href="#"><i class="fa-solid fa-"></i>Resume</a></li>
+              <li><a href="#"><i class="fa-solid fa-"></i>Blog</a></li>
+              <li class="ee"><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="images/JacobElohePhoto.jpg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+            <h1>Jacob Elohe</h1>
+            <p>
+              a Software Engineering student at ALU African Leadership
+              University. I am passionate about building software that solves
+              real problems and makes life easier. Feel free to explore my
+              website and get in touch if you'd like to connect or learn more
+              about what I do!
+            </p>
+
+            <div class="btn-group">
+              <a href="#ex" class="btn active">Explore</a>
+            </div>
+
+            <div class="social">
+              <a href="https://github.com/elohejacs"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/jacobelx?igsh=Y2RncDRscHF0enc4"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- otherrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+     <div class="bodying">
+        <div class="aboutheading" id="ex">
+            <h1><i class="fa-solid fa-wand-magic-sparkles"></i> Explore</h1>
+            <!-- <p>Look so far eventually some people rise up just to get some re-call jacobel</p> -->
+          </div>
+            <div class="hot">
+              I am a passionate student at ALU (African
+              Leadership University), studying to become a Software Engineer with a
+              mission to empower African nations. My goal is to help local businesses
+              integrate AI into their daily activities, enabling them to increase
+              productivity, improve efficiency, and unlock new growth opportunities.
+              Through my studies, I have gained practical skills in web development,
+              JavaScript, Python, Regex, programming, and database management, which I
+              use to create innovative solutions. This portfolio showcases my projects
+              and reflects my journey of using technology to address real-world
+              challenges. I believe that by teaching businesses how to leverage AI and
+              digital tools, we can drive meaningful change and contribute to Africa’s
+              development. My work is guided by a commitment to innovation,
+              collaboration, and sustainability. Let’s work together to harness the
+              power of technology and build a brighter future for our communities!
+            </div>
+            <!-- <div class="alu-image">
+              <img src="Images/ALU.jpg" alt="ALU">
+            </div> -->
+          </div>
+     </div>
+    <!-- Other division -->
+    <!-- <div class="aboutheading2">
+        <section class="about">
+            <div class="about-content">
+                <h2>Everything i've ever dreamed</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae porro inventore at modi laudantium! Non, 
+                    dignissimos, ex necessitatibus amet officia consequuntur quas nam vitae quasi voluptatem quam minima laborum neque?</p>
+            </div>
+        </section>
+      </div> -->
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** creating button click show hide navbar **/
+      var togglebt = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebt.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
